@@ -5,7 +5,8 @@
 body{margin:0;font:400 1.05rem/1.65 Raleway,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
 h1,h2,h3{line-height:1.15;margin:0 0 .6em}h2{font-size:clamp(1.8rem,4vw,2.6rem)}
 a{color:var(--g)}img{max-width:100%;height:auto;display:block}
-.nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.8rem clamp(1rem,4vw,3rem);background:rgba(31,58,50,.94);backdrop-filter:blur(8px)}
+.nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.5rem clamp(1rem,4vw,3rem);background:rgba(31,58,50,.94);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:.7rem;font-size:1.15rem}.brand img{width:44px;height:44px}
 .nav a{color:#fff;text-decoration:none;font-weight:700}.nav nav{display:flex;gap:1.4rem}.nav a:hover{color:var(--a)}
 .hero{position:relative;min-height:88vh;display:grid;align-items:end;color:#fff;background:#222}
 .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -32,5 +33,5 @@ label{display:grid;gap:.3rem;font-weight:700}input,select,textarea{font:inherit;
 dt{font-weight:700;margin-top:.8rem}dd{margin:0}.visit iframe{width:100%;height:380px;border:0;border-radius:.6rem}
 footer{background:var(--g);color:#fff;text-align:center;padding:1.5rem}
 :focus-visible{outline:3px solid var(--a);outline-offset:2px}
-@media(max-width:760px){.about,.visit,form{grid-template-columns:1fr}.nav nav{gap:.9rem;font-size:.9rem}.brand{display:none}}
+@media(max-width:760px){.about,.visit,form{grid-template-columns:1fr}.nav nav{gap:.9rem;font-size:.9rem}.brand span{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero video{display:none}.hero{background:url(img/poster.webp) center/cover}}
